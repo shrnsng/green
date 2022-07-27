@@ -1,5 +1,5 @@
 # Redbull for Teams
-## and other small life saver
+## and other tiny LifeSavers
 
 *Disclaimer: Please note that rooting your device voids its warranty and can brick it. Do it at your own risk!*
 
