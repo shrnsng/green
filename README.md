@@ -9,22 +9,22 @@ When activated, this Autohotkey script will move the mouse pointer by one pixel 
 Toggle RedBull mode, a notification will pop to indicate the new status. By hovering the tray icon, user can also know the current status.
 
 ### Ctrl+Shift 1
-Sets Teams staus to *Busy*
+Sets Teams status to *Busy*
 
 ### Ctrl+Shift 2
-Sets Teams staus to *Available*
+Sets Teams status to *Available*
 
 ### Ctrl+Shift 3
-Sets Teams staus to *Do not disturb*
+Sets Teams status to *Do not disturb*
 
 ### Ctrl+Shift 4
-Sets Teams staus to *Away*
+Sets Teams status to *Away*
 
 ### Ctrl+Shift 5
-Sets Teams staus to *Offline*
+Sets Teams status to *Offline*
 
 ### Ctrl+Shift 6
-Sets Teams staus to *Be right back*
+Sets Teams status to *Be right back*
 
 ### Ctrl+Shift 7
 Types *How are you? I hope you're doing fine* in the active text box
