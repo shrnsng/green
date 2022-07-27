@@ -1,8 +1,6 @@
 # Redbull for Teams
 ## and other tiny LifeSavers
 
-*Disclaimer: Please note that rooting your device voids its warranty and can brick it. Do it at your own risk!*
-
 When activated, this Autohotkey script will move the mouse pointer by one pixel each 30 seconds and back to its original position so not to user's flow. This will keep the computer awake (RedBull mode) and prevent Teams from going to the "Away" status. For convenience, some other shortcuts are added to quickly switch Teams status or save some typing 😉 
 
 ## List of shortcuts
