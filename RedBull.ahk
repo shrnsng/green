@@ -85,7 +85,6 @@ return
 Send, I hope you're doing well,
 return
 
-
 SendTeamsStatus(St)
 {
 	WinGetActiveTitle, Title
