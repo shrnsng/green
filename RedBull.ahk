@@ -1,12 +1,17 @@
-﻿#NoEnv
+#NoEnv
 SendMode Input
 SetWorkingDir %A_ScriptDir%
 SetTitleMatchMode RegEx
 #Include %A_ScriptDir%
 
-Disabled:= "RedBull is Disabled`n(Ctrl+0 to toggle)"
-Enabled:= "RedBull is Enabled`n(Ctrl+0 to toggle)"
+Disabled:= "RedBull is disabled`n(Ctrl+0 to toggle)"
+Enabled:= "RedBull is enabled`n(Ctrl+0 to toggle)"
+KeyboardMapDisabled:= "Keyboard Map is disabled`n(Ctrl+. to toggle)"
+KeyboardMapEnabled:= "Keyboard Map is enabled`n(Ctrl+. to toggle)"
+
 Mode:="RedBull Mode"
+KeyboardMap:="Keyboard Map"
+
 isTeamsActive:= false
 
 stdDelay:= 500
@@ -16,19 +21,56 @@ SetKeyDelay, 50, 50
 Menu, Tray, Tip , %Disabled%
 
 redbullModeVar := false
+keyboardMapVar := false
 SetTimer, redbullMode, 30000
+
+Esc:: ; Esc becomes copy
+if  (global keyboardMapVar)
+	{
+		send ^c
+	}
+return
+
+F1:: ; F1 becomes paste
+if  (global keyboardMapVar)
+	{
+		send ^v
+	}
+return
+
+F2:: ; F2 becomes cut
+if  (global keyboardMapVar)
+	{
+		send ^x
+	}
+return
+
+^+.::
+^NumpadDel::
+global keyboardMapVar := !keyboardMapVar
+if (global keyboardMapVar)
+	{
+		TrayTip, %KeyboardMap%, %KeyboardMapEnabled%, 2, 17
+		Menu, Tray, Tip , %KeyboardMapEnabled%
+	}
+else
+	{
+		TrayTip, %KeyboardMap%, %KeyboardMapDisabled%, 2, 17
+		Menu, Tray, Tip , %KeyboardMapDisabled%
+	}
+return
 
 ^+0::
 ^NumpadIns::
 global redbullModeVar := !redbullModeVar
 if (global redbullModeVar)
 	{
-		TrayTip, %Mode%, Enabled, 2, 17
+		TrayTip, %Mode%, %Enabled%, 2, 17
 		Menu, Tray, Tip , %Enabled%
 	}
 else
 	{
-		TrayTip, %Mode%, Disabled, 2, 17
+		TrayTip, %Mode%, %Disabled%, 2, 17
 		Menu, Tray, Tip , %Disabled%
 	}
 return
