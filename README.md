@@ -5,6 +5,13 @@ When activated, this Autohotkey script will move the mouse pointer by one pixel 
 
 ## List of shortcuts
 
+### Ctrl+Shift .
+Toggle keyboard mapping. When keyboard mapping is enabled:
+- Escape key acts as copy
+- F1 key acts as paste
+- F2 key acts as cut
+Keyborad mapping is a convenience for quick copy/cut/paste with some not often used keys.
+
 ### Ctrl+Shift 0
 Toggle RedBull mode, a notification will pop to indicate the new status. By hovering the tray icon, user can also know the current status.
 
@@ -27,10 +34,10 @@ Sets Teams status to *Offline*
 Sets Teams status to *Be right back*
 
 ### Ctrl+Shift 7
-Types *How are you? I hope you're doing fine* in the active text box
-
-### Ctrl+Shift 8
 Types *I'm good thank you, I hope you're doing fine too* in the active text box
 
-### Ctrl+Shift 9
+### Ctrl+Shift 8
 Types *I hope you're doing well,* in the active text box
+
+### Ctrl+Shift 9
+Types *How are you? I hope you're doing fine* in the active text box
