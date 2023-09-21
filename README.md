@@ -11,7 +11,7 @@ Toggle keyboard mapping. When keyboard mapping is enabled:
 - Escape key acts as copy
 - F1 key acts as paste
 - F2 key acts as cut
-Keyborad mapping is a convenience for quick copy/cut/paste with some not often used keys.
+Keyborad mapping is a convenience for quick copy/cut/paste with some not often used keys. It's useful for those who do intensive use of copy/paste.
 
 ### Ctrl+Shift 0
 Toggle RedBull mode, a notification will pop to indicate the new status. By hovering the tray icon, user can also know the current status.
