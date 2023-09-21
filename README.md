@@ -2,6 +2,7 @@
 ## and other tiny bonuses
 
 When activated, this Autohotkey script will move the mouse pointer by one pixel each 30 seconds and back to its original position hence not disturbing user's flow. This will keep the computer awake (RedBull mode) and prevent Teams from going to the "Away" status. For convenience, some other shortcuts are added to quickly switch Teams status or save some typing 😉. The shortcuts can be activated using normal numeric keys or from the numpad.
+The bin folder contains the compiled script, hence no need to install Autohotkey.
 
 ## List of shortcuts
 
