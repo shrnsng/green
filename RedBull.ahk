@@ -24,24 +24,39 @@ redbullModeVar := false
 keyboardMapVar := false
 SetTimer, redbullMode, 30000
 
-Esc:: ; Esc becomes copy
+$Esc:: ; Esc becomes copy
 if  (global keyboardMapVar)
 	{
 		send ^c
+		; can be customized
+	}
+else
+	{
+		send {Esc}
+		; can be customized
 	}
 return
 
-F1:: ; F1 becomes paste
+$F1:: ; F1 becomes paste
 if  (global keyboardMapVar)
 	{
 		send ^v
+		; can be customized
+	}
+else
+	{
+		send {F1}
 	}
 return
 
-F2:: ; F2 becomes cut
+$F2:: ; F2 becomes cut
 if  (global keyboardMapVar)
 	{
 		send ^x
+	}
+else
+	{
+		send {F2}
 	}
 return
 
